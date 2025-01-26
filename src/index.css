@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base{
+  body{
+    @apply font-mont;
+  }
+
+  .link{
+    @apply font-bold leading-6 tracking-wide text-[14px] cursor-pointer; 
+  }
+
+  p{
+    @apply text-[14px] leading-5 tracking-wide font-normal;
+  }  
+
+  h1{
+    @apply font-bold leading-[80px] text-[58px] tracking-wide;
+  }
+
+  h2{
+    @apply font-bold leading-[50px] tracking-wide text-[40px];
+  }
+
+  h3{
+    @apply font-bold leading-[32px] tracking-wide text-[24px]; 
+  }
+
+  h4{
+    @apply font-bold leading-[30px] tracking-wide text-[20px];
+  }
+
+  h5{
+    @apply font-bold leading-[24px] tracking-wide text-[16px];
+  }
+
+  h6{
+    @apply font-bold leading-[24px] tracking-wide text-[14px];
+  }
+
+  .small{
+    @apply text-[12px] font-normal leading-[16px] tracking-wide;
+  }
+
+  .btn{
+    @apply text-[12px] font-bold tracking-wide leading-[16px];
+  }
+}
+
+@layer utilities {
+  section {
+    @apply xl:px-[200px]  lg:px-[100px] md:px-[60px] px-[16px] xl:py-[114px] lg:py-[80px] md:py-[60px] py-[40px];
+  }
+}
+
+
+
+/* Effects */
+.accentuedDropShadow{
+  box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+}
+
+.lightDropShadow{
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+}
